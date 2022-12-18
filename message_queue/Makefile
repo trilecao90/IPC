@@ -1,12 +1,12 @@
 CC := g++
 CCFLAGS :=
 
-# ./Client ./Server
+# ./client ./server
 SUBDIRS := $(wildcard */)
 
 CCFLAGS += $(addprefix -I , $(SUBDIRS))
 
-OUTPUTS := ./Client/Client.out ./Server/Server.out
+OUTPUTS := ./client/client.out ./server/server.out
 
 %.o : %.cpp
 	$(CC) $(CCFLAGS) -c $< -o $@
