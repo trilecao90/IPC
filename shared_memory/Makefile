@@ -1,5 +1,5 @@
 CC := g++
-CCFLAGS :=
+CCFLAGS := -g -pthread
 
 # ./client ./server
 SUBDIRS := $(wildcard */)
